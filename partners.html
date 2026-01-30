@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Program | Averin Holdings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">AVERIN HOLDINGS</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registry.html">Integrity Registry</a></li>
+                <li><a href="partners.html" class="active">Partners</a></li>
+                <li><a href="governance.html">Governance</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Partner Verification Program</h1>
+            <p>Formal partnership framework for entities committed to institutional-grade compliance and transparency</p>
+        </div>
+    </section>
+
+    <!-- Partner Verification Lookup -->
+    <section class="partner-lookup-section">
+        <div class="container">
+            <div class="lookup-card">
+                <h2>Verify Partner Status</h2>
+                <p>Search our directory to confirm an entity's verified partner standing and view their compliance record.</p>
+                <div class="lookup-form">
+                    <input type="text" id="partnerSearchInput" placeholder="Enter entity name or partner ID...">
+                    <button id="verifyBtn" class="btn btn-primary">Verify</button>
+                </div>
+                <div id="verificationResult" class="verification-result" style="display: none;">
+                    <!-- Result populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Standards -->
+    <section class="standards-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Partnership Standards</h2>
+                <p>Requirements and commitments for verified partner status</p>
+            </div>
+            <div class="standards-grid">
+                <div class="standard-card">
+                    <div class="standard-number">01</div>
+                    <h3>Due Diligence</h3>
+                    <p>Comprehensive background review including operational history, leadership verification, and compliance record assessment.</p>
+                    <ul class="standard-list">
+                        <li>Entity registration documentation</li>
+                        <li>Leadership background checks</li>
+                        <li>Financial stability verification</li>
+                        <li>Historical compliance audit</li>
+                    </ul>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-number">02</div>
+                    <h3>Governance Framework</h3>
+                    <p>Adoption of standardized governance structures with clear accountability chains and decision-making protocols.</p>
+                    <ul class="standard-list">
+                        <li>Documented organizational hierarchy</li>
+                        <li>Defined roles and responsibilities</li>
+                        <li>Internal oversight mechanisms</li>
+                        <li>Conflict resolution procedures</li>
+                    </ul>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-number">03</div>
+                    <h3>Reporting Requirements</h3>
+                    <p>Regular disclosure of operational metrics, financial status, and significant events through standardized reporting channels.</p>
+                    <ul class="standard-list">
+                        <li>Quarterly operational reports</li>
+                        <li>Annual financial disclosures</li>
+                        <li>Incident reporting protocols</li>
+                        <li>Real-time status updates</li>
+                    </ul>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-number">04</div>
+                    <h3>Ongoing Monitoring</h3>
+                    <p>Continuous compliance verification through automated monitoring systems and periodic manual reviews.</p>
+                    <ul class="standard-list">
+                        <li>Automated compliance checks</li>
+                        <li>Quarterly review audits</li>
+                        <li>Random sampling inspections</li>
+                        <li>Public complaint tracking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Benefits -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-layout">
+                <div class="benefits-content">
+                    <h2>Partner Benefits</h2>
+                    <p>Verified partners gain institutional recognition and access to governance resources:</p>
+                    <div class="benefit-items">
+                        <div class="benefit-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            <div>
+                                <h4>Verified Badge</h4>
+                                <p>Public verification status in partner directory</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                            </svg>
+                            <div>
+                                <h4>Governance Templates</h4>
+                                <p>Access to compliance frameworks and documentation</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                            <div>
+                                <h4>Advisory Support</h4>
+                                <p>Consultation on compliance and operational matters</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            <div>
+                                <h4>Priority Review</h4>
+                                <p>Expedited processing for registry submissions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-visual">
+                    <div class="partner-stats-card">
+                        <h3>Partner Network</h3>
+                        <div class="stat-row">
+                            <span class="stat-label">Verified Partners</span>
+                            <span class="stat-value">89</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Applications in Review</span>
+                            <span class="stat-value">23</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Average Processing Time</span>
+                            <span class="stat-value">14 days</span>
+                        </div>
+                        <div class="stat-row">
+                            <span class="stat-label">Approval Rate</span>
+                            <span class="stat-value">67%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application CTA -->
+    <section class="application-section">
+        <div class="container">
+            <div class="application-card">
+                <h2>Apply for Partner Verification</h2>
+                <p>Submit an application to become a verified partner. Our team will review your submission and contact you within 2-3 business days.</p>
+                <form id="partnerApplicationForm" class="partner-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="entityName">Entity Name</label>
+                            <input type="text" id="entityName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="entityType">Entity Type</label>
+                            <select id="entityType" required>
+                                <option value="">Select type...</option>
+                                <option value="Corporation">Corporation</option>
+                                <option value="Holdings">Holdings Group</option>
+                                <option value="Development">Development Studio</option>
+                                <option value="Investment">Investment Fund</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Primary Contact Name</label>
+                            <input type="text" id="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Contact Email</label>
+                            <input type="email" id="contactEmail" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="robloxGroup">Roblox Group ID (if applicable)</label>
+                        <input type="text" id="robloxGroup">
+                    </div>
+                    <div class="form-group">
+                        <label for="operationalHistory">Operational History</label>
+                        <textarea id="operationalHistory" rows="4" placeholder="Briefly describe your entity's history, current operations, and why you're seeking partner verification..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="termsAccept" required>
+                            <span>I confirm that the information provided is accurate and that our entity meets the basic eligibility requirements for partner verification.</span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+                <div id="applicationSuccess" class="success-message" style="display: none;">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                    <h3>Application Submitted</h3>
+                    <p>Thank you for your interest. Our team will review your application and contact you within 2-3 business days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">AVERIN HOLDINGS</span>
+                    </div>
+                    <p class="footer-desc">Institutional oversight infrastructure for the Roblox economy.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="registry.html">Integrity Registry</a></li>
+                        <li><a href="partners.html">Partner Verification</a></li>
+                        <li><a href="governance.html">Governance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Averin Holdings. All rights reserved.</p>
+                <p class="footer-disclaimer">Participation units are Roblox-native instruments valued at 2 Robux and are not securities or financial instruments.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="partners.js"></script>
+</body>
+</html>

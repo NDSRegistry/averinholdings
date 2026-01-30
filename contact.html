@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Averin Holdings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">AVERIN HOLDINGS</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registry.html">Integrity Registry</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="governance.html">Governance</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Averin Holdings</h1>
+            <p>Submit reports, request assistance, or reach out to our team</p>
+        </div>
+    </section>
+
+    <!-- Verified Channels Notice -->
+    <section class="channels-section">
+        <div class="container">
+            <div class="notice-card">
+                <div class="notice-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                        <line x1="12" y1="9" x2="12" y2="13"/>
+                        <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                </div>
+                <div class="notice-content">
+                    <h3>Verified Contact Channels Only</h3>
+                    <p>Averin Holdings only operates through verified official channels. We will never contact you through unofficial Discord servers, direct messages from unverified accounts, or third-party platforms. Always verify you are interacting with legitimate Averin Holdings representatives.</p>
+                </div>
+            </div>
+
+            <div class="channels-grid">
+                <div class="channel-card">
+                    <div class="channel-icon verified">✓</div>
+                    <h4>Official Discord Server</h4>
+                    <p class="channel-link">discord.gg/averinholdings</p>
+                    <p class="channel-desc">Primary community and support channel</p>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-icon verified">✓</div>
+                    <h4>Email Support</h4>
+                    <p class="channel-link">contact@averinholdings.rblx</p>
+                    <p class="channel-desc">Official correspondence and inquiries</p>
+                </div>
+                <div class="channel-card">
+                    <div class="channel-icon verified">✓</div>
+                    <h4>Compliance Hotline</h4>
+                    <p class="channel-link">compliance@averinholdings.rblx</p>
+                    <p class="channel-desc">Confidential reporting channel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Forms -->
+    <section class="contact-forms-section">
+        <div class="container">
+            <div class="forms-layout">
+                <!-- Report Submission -->
+                <div class="form-container">
+                    <h2>Submit a Report</h2>
+                    <p>File a compliance concern, report misconduct, or submit information for review.</p>
+                    
+                    <form id="reportForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="reportType">Report Type *</label>
+                            <select id="reportType" required>
+                                <option value="">Select report type...</option>
+                                <option value="Compliance Violation">Compliance Violation</option>
+                                <option value="Misconduct">Misconduct</option>
+                                <option value="Financial Irregularity">Financial Irregularity</option>
+                                <option value="Operational Issue">Operational Issue</option>
+                                <option value="Partner Concern">Partner Concern</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reportEntity">Entity/Individual Involved</label>
+                            <input type="text" id="reportEntity" placeholder="Name of entity or individual (if applicable)">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reportSummary">Summary *</label>
+                            <input type="text" id="reportSummary" placeholder="Brief description of the issue" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reportDetails">Detailed Description *</label>
+                            <textarea id="reportDetails" rows="6" placeholder="Provide as much detail as possible about the situation, including dates, evidence, and relevant context..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reportEvidence">Supporting Evidence (URLs, Screenshots, Documents)</label>
+                            <textarea id="reportEvidence" rows="3" placeholder="Links to evidence, descriptions of documentation, or relevant references..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="reportAnonymous">
+                                <span>Submit this report anonymously</span>
+                            </label>
+                        </div>
+
+                        <div id="reporterInfo" class="reporter-section">
+                            <h4>Reporter Information (Optional for Anonymous Reports)</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="reporterName">Your Name</label>
+                                    <input type="text" id="reporterName">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reporterEmail">Your Email</label>
+                                    <input type="email" id="reporterEmail">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="reporterContact">Preferred Contact Method</label>
+                                <input type="text" id="reporterContact" placeholder="Discord, Email, etc.">
+                            </div>
+                        </div>
+
+                        <div class="form-disclaimer">
+                            <p><strong>Confidentiality Notice:</strong> All reports are treated with strict confidentiality. Anonymous reports are processed without identifying information. We take all submissions seriously and conduct thorough reviews.</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit Report</button>
+                    </form>
+
+                    <div id="reportSuccess" class="success-message" style="display: none;">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <h3>Report Submitted Successfully</h3>
+                        <p id="reportConfirmation">Your report has been received and assigned tracking number <strong id="trackingNumber"></strong>. Our compliance team will review this submission within 48 hours.</p>
+                        <button class="btn btn-secondary" id="submitAnotherReport">Submit Another Report</button>
+                    </div>
+                </div>
+
+                <!-- General Contact -->
+                <div class="form-container">
+                    <h2>General Inquiry</h2>
+                    <p>Questions about our services, partnership opportunities, or general information.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="inquiryType">Inquiry Type *</label>
+                            <select id="inquiryType" required>
+                                <option value="">Select inquiry type...</option>
+                                <option value="Partnership">Partnership Opportunity</option>
+                                <option value="Press">Press/Media</option>
+                                <option value="Technical">Technical Support</option>
+                                <option value="General">General Question</option>
+                                <option value="Feedback">Feedback</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Name *</label>
+                                <input type="text" id="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email *</label>
+                                <input type="email" id="contactEmail" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactOrganization">Organization (if applicable)</label>
+                            <input type="text" id="contactOrganization">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <input type="text" id="contactSubject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <div id="contactSuccess" class="success-message" style="display: none;">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <h3>Message Sent Successfully</h3>
+                        <p>Thank you for contacting us. We typically respond within 1-2 business days.</p>
+                        <button class="btn btn-secondary" id="sendAnotherMessage">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Disclaimers -->
+    <section class="disclaimers-section">
+        <div class="container">
+            <h2>Important Information</h2>
+            <div class="disclaimer-grid">
+                <div class="disclaimer-card">
+                    <h4>Response Times</h4>
+                    <p>Compliance reports are reviewed within 48 hours. General inquiries receive responses within 1-2 business days. Complex matters may require additional time for thorough investigation.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>Anonymity Protection</h4>
+                    <p>Anonymous reports are processed without any identifying information. We cannot follow up on anonymous reports unless contact information is voluntarily provided.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>Verification Requirement</h4>
+                    <p>All communications must go through verified official channels. We will never ask for sensitive information via direct messages or unofficial platforms.</p>
+                </div>
+                <div class="disclaimer-card">
+                    <h4>Data Handling</h4>
+                    <p>All submissions are handled in accordance with our privacy policy and data protection standards. Information is only shared with authorized personnel on a need-to-know basis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">AVERIN HOLDINGS</span>
+                    </div>
+                    <p class="footer-desc">Institutional oversight infrastructure for the Roblox economy.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="registry.html">Integrity Registry</a></li>
+                        <li><a href="partners.html">Partner Verification</a></li>
+                        <li><a href="governance.html">Governance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Averin Holdings. All rights reserved.</p>
+                <p class="footer-disclaimer">Participation units are Roblox-native instruments valued at 2 Robux and are not securities or financial instruments.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

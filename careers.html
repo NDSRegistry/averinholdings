@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Averin Holdings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-icon">◆</span>
+                    <span class="logo-text">AVERIN HOLDINGS</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registry.html">Integrity Registry</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="governance.html">Governance</a></li>
+                <li><a href="careers.html" class="active">Careers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Careers at Averin Holdings</h1>
+            <p>Build the future of institutional oversight for the Roblox economy</p>
+        </div>
+    </section>
+
+    <!-- Careers Intro -->
+    <section class="careers-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Why Join Averin Holdings</h2>
+                <p>We're creating unprecedented institutional infrastructure for Roblox-native organizations. Our team combines expertise in compliance, governance, technology, and operations to build systems that bring transparency and accountability to the ecosystem.</p>
+                <div class="value-grid">
+                    <div class="value-item">
+                        <h4>Meaningful Work</h4>
+                        <p>Direct impact on ecosystem integrity and institutional credibility</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Growth Opportunity</h4>
+                        <p>Build expertise in emerging Roblox institutional frameworks</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Collaborative Culture</h4>
+                        <p>Work with skilled professionals across multiple disciplines</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="positions-section">
+        <div class="container">
+            <div class="positions-header">
+                <h2>Open Positions</h2>
+                <div class="positions-filters">
+                    <select id="departmentFilter" class="filter-select">
+                        <option value="">All Departments</option>
+                        <option value="Compliance">Compliance</option>
+                        <option value="Operations">Operations</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Legal">Legal & Policy</option>
+                        <option value="Partner Relations">Partner Relations</option>
+                    </select>
+                    <select id="typeFilter" class="filter-select">
+                        <option value="">All Types</option>
+                        <option value="Full-time">Full-time</option>
+                        <option value="Part-time">Part-time</option>
+                        <option value="Contract">Contract</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="positions-grid" id="positionsGrid">
+                <!-- Position cards populated by JavaScript -->
+            </div>
+
+            <div id="noPositions" class="no-results" style="display: none;">
+                <p>No positions match the selected filters.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Modal -->
+    <div class="modal" id="applicationModal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2 id="modalJobTitle">Position Application</h2>
+                <button class="modal-close" id="closeApplicationModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="jobApplicationForm" class="application-form">
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="applicantName">Full Name *</label>
+                                <input type="text" id="applicantName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="applicantEmail">Email Address *</label>
+                                <input type="email" id="applicantEmail" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="applicantDiscord">Discord Username</label>
+                                <input type="text" id="applicantDiscord" placeholder="username#0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="applicantRoblox">Roblox Username</label>
+                                <input type="text" id="applicantRoblox">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Experience & Qualifications</h3>
+                        <div class="form-group">
+                            <label for="applicantExperience">Relevant Experience *</label>
+                            <textarea id="applicantExperience" rows="5" placeholder="Describe your relevant experience and qualifications for this role..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="applicantMotivation">Why Averin Holdings? *</label>
+                            <textarea id="applicantMotivation" rows="4" placeholder="What interests you about this opportunity and our organization?" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="applicantAvailability">Availability *</label>
+                            <select id="applicantAvailability" required>
+                                <option value="">Select your availability...</option>
+                                <option value="Immediate">Immediate</option>
+                                <option value="2 weeks">2 weeks notice</option>
+                                <option value="1 month">1 month notice</option>
+                                <option value="Flexible">Flexible timing</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Additional Information</h3>
+                        <div class="form-group">
+                            <label for="applicantPortfolio">Portfolio/LinkedIn (optional)</label>
+                            <input type="url" id="applicantPortfolio" placeholder="https://">
+                        </div>
+                        <div class="form-group">
+                            <label for="applicantAdditional">Additional Comments</label>
+                            <textarea id="applicantAdditional" rows="3" placeholder="Anything else you'd like us to know?"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="cancelApplication">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </div>
+                </form>
+
+                <div id="applicationSubmitted" class="success-message" style="display: none;">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                        <polyline points="22 4 12 14.01 9 11.01"/>
+                    </svg>
+                    <h3>Application Submitted Successfully</h3>
+                    <p>Thank you for your interest in joining Averin Holdings. Our team will review your application and contact you within 5-7 business days.</p>
+                    <button class="btn btn-primary" id="closeSuccessMessage">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span class="logo-icon">◆</span>
+                        <span class="logo-text">AVERIN HOLDINGS</span>
+                    </div>
+                    <p class="footer-desc">Institutional oversight infrastructure for the Roblox economy.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="registry.html">Integrity Registry</a></li>
+                        <li><a href="partners.html">Partner Verification</a></li>
+                        <li><a href="governance.html">Governance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Compliance</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Averin Holdings. All rights reserved.</p>
+                <p class="footer-disclaimer">Participation units are Roblox-native instruments valued at 2 Robux and are not securities or financial instruments.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="careers.js"></script>
+</body>
+</html>
